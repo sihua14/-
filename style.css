@@ -1,0 +1,519 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+* a {
+    text-decoration: none;
+}
+
+.wrap,
+.header-wrap{
+    max-width:1088px;
+    margin: 0 auto;
+}
+.wrap section,
+header{
+    margin-bottom: 100px;  
+}
+
+
+@media (max-width:768px)  {
+    .wrap,
+    header{
+        padding:0 20px;
+    }
+    .wrap section,
+    header{
+        margin-bottom:60px;
+    } 
+}
+@media (max-width:992px) {
+    .wrap 
+    {
+        padding: 0 20px;
+    }
+  
+}
+
+
+/* 黃色bg */
+header{
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg') no-repeat right top/contain;
+    position: relative;
+
+}
+.header-wrap{
+    padding-bottom:117px;
+}
+/* robot img*/
+.banner{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.banner-ball{
+    position: absolute;
+    width:138px;
+    height: 360px;
+    background-image:url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg') ;
+    background-position: right;
+    bottom: -180px;
+}
+
+.banner-text{
+    width: 42%;
+    padding: 158px 0;
+
+}
+.banner h1{
+    font: normal normal bold 18px/26px Noto Sans TC;
+    color: #56C4C5; 
+}
+.banner p{
+    font: normal normal bold 48px/70px Noto Sans TC;
+    color: #221E1F;
+    padding:8px 0 16px 0;
+}
+.banner h2{
+    font: normal normal normal 20px/29px Noto Sans TC;
+    color: #221E1F;
+}
+nav{
+    display: flex;
+    padding:24px 0;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.logo{
+    height: 40px;
+    align-self: center;
+}
+.nav-plan-btn{
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #FFFFFF;
+    border-radius: 22px;
+    padding:8px 32px;
+    box-sizing: border-box;
+}
+@media (max-width:768px) {
+    header{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg'), url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .logo{
+        height: 24px;
+    }
+    
+
+    .banner{
+        background: unset;
+    }
+    .banner-ball{
+        position: absolute;
+        width:126px;
+        height: 126px;
+        left: -97px;
+        /* bottom: -110px; */
+        
+        background-size: contain;
+    }
+    
+    
+    nav{
+        padding: 16px 0;
+    }
+    .banner-text{
+        margin-top: 32px;
+        width: 100%;
+        padding:0 0 376px 0 ;
+    }
+    .banner h1{
+        font: normal normal bold 16px/24px Noto Sans TC;
+    }
+    .banner p{
+        font: normal normal bold 32px/46px Noto Sans TC;
+    }
+    .banner h2{
+        font: normal normal normal 16px/24px Noto Sans TC;
+    }
+    
+}
+
+
+/* 社交平台 */
+.social{
+    text-align: center;
+    color: #221E1F;
+}
+.social h3{
+    font: normal normal bold 32px/46px Noto Sans TC;
+}
+.social-list{
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+    margin: 48px auto;
+
+}
+.social-item{
+    width: 25%;
+}
+.social-item img{
+    width: 90px;
+    height: 90px;
+}
+.social-item h4{
+    margin:24px 0;
+    font: normal normal bold 24px/35px Noto Sans TC;
+    white-space: nowrap;
+}
+.social-item p{
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #747474;
+}
+@media (max-width:768px) {
+    .social h3{
+        font: normal normal bold 28px/40px Noto Sans TC;
+    }
+    .social-list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap:24px;
+        margin: 32px 0 0 0 ;
+    }
+    .social-item{
+        width: 100%;
+    }
+    .social-item img{
+        width: 60px;
+        height: 60px;
+    }
+    .social-item h4{
+        margin:16px 0;
+        font: normal normal bold 18px/26px Noto Sans TC;
+    }
+    
+}
+
+
+
+.container{
+    position: relative;
+}
+.container-ball{
+    background-image: url('https:/raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg') ;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 320px;
+    position:absolute;
+    right: 0;
+    top:410px;
+    z-index: -10;
+}
+
+/* 客製化方案 */
+.custom{
+    color: #221E1F;
+    text-align: center;
+
+}
+.custom h3{
+    font: normal normal bold 32px/46px Noto Sans TC;
+}
+.custom .description{
+    font: normal normal normal 20px/29px Noto Sans TC;
+    margin:16px 0 48px 0;
+}
+.custom-list{
+    display: flex;
+    justify-content: space-between;
+}
+.custom-item{
+    width: 24%;
+    background: #FFFFFF ;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    
+}
+.custom-item img{
+    border-radius: 12px 12px 0px 0px;
+}
+.custom-item h4{
+    color: #56C4C5;
+    margin: 16px 0;
+}
+.custom-item p{
+    font: normal normal normal 16px/24px Noto Sans TC;
+    padding: 0 16px 24px 16px;
+}
+@media (max-width:768px) {
+    .custom h3{
+        font: normal normal bold 28px/40px Noto Sans TC;
+    }
+    .custom-list{
+        flex-wrap: wrap;
+        gap:24px;
+        justify-content: center;
+
+    }
+    .custom-item{
+        /* width: 100%; */
+        width: 260px;
+    }
+    .container-ball{
+        background-size: cover;
+        width: 88px;
+        height: 135px;
+        top:unset;
+        bottom: -32px;
+    }
+
+    
+}
+
+
+/* 方案 */
+.plan{
+    display: flex;
+    color: #221E1F;
+    align-items: center;
+
+}
+.plan-list{
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 28px;
+    
+}
+.plan-item{
+    width: 45%;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding:32px 32px 48px 32px;
+}
+.plan-icon{
+    width: 86px;
+    height: 86px;
+}
+.plan-item h4{
+    margin:24px 0 16px 0;
+    font: normal normal bold 18px/26px Noto Sans TC;
+}
+.plan-item p{
+    font: normal normal normal 16px/24px Noto Sans TC;
+}
+.plan-intro{
+    width: 37%;
+    margin-left: auto;
+
+}
+.plan-intro h3{
+    font: normal normal bold 32px/46px Noto Sans TC;
+
+}
+.plan-intro p{
+    font: normal normal normal 18px/26px Noto Sans TC;
+    font-size: 18px;
+    padding: 16px 0 22px 0;
+
+}
+.plan-intro .plan-btn{
+    display: inline-block;
+    margin-top: 0;
+}
+@media (max-width:768px) {
+    .plan{
+        flex-direction: column-reverse;
+    }
+    .plan-list{
+        width: 100%;
+        margin-top: 32px;
+        justify-content: center;
+    }
+    .plan-item{
+        width: 230px;
+        padding:32px 41px 48px 24px;
+
+    }
+    .plan-item h4{
+        margin:24px 0 20px 0;
+    }
+    .plan-intro{
+        width: 100%;
+        text-align: center;
+        margin:0;
+
+    }
+    .plan-intro h3{
+        font: normal normal bold 28px/40px Noto Sans TC;        
+    }
+    .plan-intro p{
+        margin: 16px 0 ;
+        font: normal normal normal 16px/24px Noto Sans TC;
+    }
+}
+
+
+/* 評論 */
+.review{
+    color: #221E1F;
+    position: relative;
+}
+.review-ball{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg") ;
+    background-size: contain;
+    left:-100px;
+    top:46px;
+}
+.review-box{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:768px) {
+    .review-box{
+        flex-direction: column;
+        align-items: center;
+    }
+     
+}
+.review h3{
+    font: normal normal bold 32px/46px Noto Sans TC;
+    text-align: center;
+}
+
+.review-card{
+    width: 352px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding:48px 32px 24px 32px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 104px;
+}
+@media (max-width:768px) {
+    .review-card{
+        width: 100%;
+        padding:48px 16px 16px;
+        margin-top:88px;
+    }
+}
+.review-avatar {
+    position: absolute;
+    left:32px;
+    top:-56px;
+}
+
+.review-avatar img {
+    border-radius: 50%;    
+    width: 80px;
+    height: 80px;
+}
+.review-text {
+    font: normal normal normal 16px/24px Noto Sans TC;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 24px;
+
+}
+@media (max-width:768px) {
+    .review-text{
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    
+    }
+    
+}
+.review-user{
+    display: flex;
+    justify-content: space-between;
+
+}
+.user-company{
+    font: normal normal bold 16px/24px Noto Sans TC;
+    margin-bottom: 8px;
+}
+.user-title{
+    font: normal normal normal 16px/24px Noto Sans TC;
+}
+.review-star img{
+    width: 17px;
+    height: 16px;
+}
+
+
+/* footer-plan */
+.footer-plan{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg") ;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 503px;
+    box-sizing: border-box;
+    padding:260px 0 100px 0;
+}
+@media(max-width:768px){
+    .footer-plan{
+        height: 461px;
+        padding:293px 0 60px 0;
+        background-size: cover;
+        background-position: center;
+
+    }
+    
+}
+.footer-plan .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-plan .container h3{
+    font: normal normal bold 32px/46px Noto Sans TC;
+    color: #221E1F;
+}
+@media (max-width:768px) {
+    .footer-plan .container h3{
+        font: normal normal bold 24px/35px Noto Sans TC;
+    }
+    
+}
+.plan-btn{
+    background: #FFFFFF;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    font-size: 18px;
+    line-height: 26px;
+    padding:12px 32px;
+    margin-top: 48px;
+    color: #56C4C5;
+}
+.plan-btn:hover{
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+
+}
+
+@media (max-width:768px) {
+    .footer-plan .container a{
+        margin-top: 24px;
+    }
+}
+
+
+/* footer */
+footer{
+    background: #F5F5F5;
+    text-align: center;
+}
+footer h6{
+    padding:16px 0;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #221E1F; 
+}
