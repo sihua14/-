@@ -435,6 +435,7 @@ nav{
 .review-user{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 
 }
 .user-company{
